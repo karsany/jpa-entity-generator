@@ -15,7 +15,7 @@ apply plugin: 'java'
 buildscript {
   dependencies {
     classpath 'com.h2database:h2:1.4.197'
-    classpath 'com.smartnews:jpa-entity-generator:0.99.7'
+    classpath 'com.smartnews:jpa-entity-generator:0.99.8'
   }
 }
 
@@ -28,7 +28,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-  providedCompile 'org.projectlombok:lombok::1.18.2'
+  providedCompile 'org.projectlombok:lombok:1.18.2'
   providedCompile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
 }
 
@@ -46,7 +46,7 @@ Maven plugin to run the code generator is also available.
 <plugin>
   <groupId>com.smartnews</groupId>
   <artifactId>maven-jpa-entity-generator-plugin</artifactId>
-  <version>0.99.7</version>
+  <version>0.99.8</version>
   <dependencies>
     <dependency>
       <groupId>mysql</groupId>
